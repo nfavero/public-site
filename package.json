@@ -1,0 +1,24 @@
+{
+    "scripts": {
+        "build:app": "webpack --mode=production --config ./webpack.config.js",
+        "start:app": "webpack server --config ./webpack.config.js"
+    },
+    "dependencies": {
+        "@nfinite-wisdom/async": "^0.0.9",
+        "@nfinite-wisdom/render": "^0.0.24"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.12",
+        "css-loader": "^6.7.1",
+        "mini-css-extract-plugin": "^2.6.1",
+        "postcss": "^8.4.17",
+        "postcss-loader": "^7.0.1",
+        "tailwindcss": "^3.1.8",
+        "ts-loader": "^9.4.1",
+        "tslib": "^2.4.0",
+        "typescript": "^4.8.4",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.1"
+    }
+}
