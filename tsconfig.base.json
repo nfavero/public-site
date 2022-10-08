@@ -12,9 +12,6 @@
         "target": "es2015",
         "module": "esnext",
         "resolveJsonModule": true,
-        "typeRoots": [
-            "node_modules/@types",
-        ],
         "lib": [
             "es2017",
             "dom"
@@ -28,9 +25,6 @@
         },
     },
     "references": [
-        {
-            "path": "./tsconfig.lib.json"
-        },
         {
             "path": "./tsconfig.app.json"
         }

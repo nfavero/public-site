@@ -11,19 +11,34 @@ const Skill = (header: string, ...body: ComponentConfigFn[]) => Container(
         'border',
         'border-teal-500',
         'shadow-md',
-        'shadow-violet-500',
-        'shadow-inner',
+        'shadow-gray-500',
         'w-full',
         'md:w-1/4',
         'mt-3'
     ),
     Heading4(
-        CssClasses('text-2xl', 'p-5', 'border-b-2', 'border-teal-500'),
+        CssClasses(
+            'text-2xl',
+            'p-5',
+            'border-b-2',
+            'border-teal-500',
+            'bg-gradient-to-br',
+            'from-sky-500',
+            'to-indigo-500'
+        ),
         Text(header)
     ),
     Container(
         ...body
     )
+);
+
+const SkillItem = (text: string, idx: number) => LI(
+    BlockText(text),
+    CssClasses('transition-opacity', 'duration-200', 'opacity-0'),
+    p => {
+        setTimeout(() => p.component.el.classList.add('opacity-100'), 250 + idx * 50);
+    }
 );
 
 export const MySkills = Container(
@@ -44,34 +59,21 @@ export const MySkills = Container(
             'Front End',
             UL(
                 CssClasses('ml-5'),
-                LI(BlockText('Angular')),
-                LI(BlockText('React')),
-                LI(BlockText('JACL')),
-                LI(BlockText('VanillaJS')),
-                LI(BlockText('HTML')),
-                LI(BlockText('CSS')),
-                LI(BlockText('Flutter'))
+                ...['Angular', 'React', 'JACL', 'VanillaJS', 'HTML', 'CSS', 'Tailwind', 'Bootstrap', 'SCSS', 'Flutter'].map(SkillItem)
             )
         ),
         Skill(
             'Back End',
             UL(
                 CssClasses('ml-5'),
-                LI(BlockText('C#')),
-                LI(BlockText('NodeJS')),
-                LI(BlockText('Java')),
-                LI(BlockText('NextJS'))
+                ...['C#', 'NodeJS', 'Java', 'NextJS', 'Express', 'AWS Lambda', 'Azure Functions', 'GCP Functions'].map(SkillItem)
             )
         ),
         Skill(
             'Other',
             UL(
                 CssClasses('ml-5'),
-                LI(BlockText('SQL')),
-                LI(BlockText('DynamoDB')),
-                LI(BlockText('Java')),
-                LI(BlockText('Azure')),
-                LI(BlockText('AWS'))
+                ...['SQL', 'DynamoDB', 'Java', 'Azure', 'AWS'].map(SkillItem)
             )
         )
     )

@@ -8,10 +8,17 @@ export const Sidebar = Container(
         'bottom-0',
         'w-full',
         'flex-col',
-        'p-4',
         'bg-cyan-900',
         'text-white',
         'fixed',
+        'flex',
+        'justify-center',
+        'overflow-hidden',
+        'px-4',
+        'animate-slideUp',
+        'md:p-4',
+        'md:justify-start',
+        'md:animate-none',
         'md:h-full',
         'md:flex',
         'md:relative',
@@ -19,13 +26,17 @@ export const Sidebar = Container(
     ),
     Container(
         CssClasses(
+            'flex',
+            'justify-center',
+            'items-center',
             'rounded-full',
             'bg-gradient-to-br',
             'from-red-800',
             'to-violet-700',
-            'p-4',
             'shadow-md',
-            'shadow-violet-500'
+            'shadow-violet-500',
+            'w-12',
+            'h-12'
         ),
         BlockText('NF'),
         Container()

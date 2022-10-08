@@ -9,6 +9,7 @@ export const RawAtom = <TEl, TExtendedProps extends Record<string, any>>(input: 
             }
             const clone = _cached.cloneNode(true);
             clone.childNodes.forEach((child, idx) => {
+                console.log(child);
                 render(p => component(child as any))(...fns as any)(props);
             });
         }
