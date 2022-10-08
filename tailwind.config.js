@@ -7,7 +7,7 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                'img-hero': "url('/public/images/bg-image.jpg')"
+                'img-hero': "url('/public/images/bg-image.webp')"
             },
             keyframes: {
                 shake: {
@@ -20,7 +20,7 @@ module.exports = {
                   }
             },
             animation: {
-                shake: 'shake 2000ms ease-in-out 4'
+                shake: 'shake 2000ms ease-in-out 3'
             }
         }
     },

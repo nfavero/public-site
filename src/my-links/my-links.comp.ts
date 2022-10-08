@@ -13,7 +13,7 @@ const Github = RawAtom(github);
 const Medium = RawAtom(medium);
 const LinkedIn = RawAtom(linkedIn);
 
-const IconLink = (href: string, icon: ComponentFactory<any>, pad?: boolean) => Link(
+const IconLink = (href: string, icon: ComponentFactory<any>, alt, pad?: boolean) => Link(
     pad ? CssClasses('ml-3') : () => {},
     p => p.component.el.href = href,
     p => p.component.el.target = '_blank',

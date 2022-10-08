@@ -8,7 +8,6 @@ import { MyLinks } from './my-links/my-links.comp';
 
 (function () {
     const Body = CssClassesComp('h-full', 'w-full', 'flex')(Container);
-    const Main = CssClassesComp('m-2')(Container);
     HTMLApp(
         Body(
             Sidebar,
@@ -21,7 +20,9 @@ import { MyLinks } from './my-links/my-links.comp';
                         'flex',
                         'justify-center',
                         'items-center', 'h-[50%]', 'bg-cover', 'text-gray-300',
-                        'relative'),
+                        'relative',
+                        'bg-fixed'
+                    ),
                     MyLinks,
                     Heading(
                         CssClasses('text-4xl', 'mx-auto'),

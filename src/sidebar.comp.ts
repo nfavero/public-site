@@ -8,11 +8,11 @@ export const Sidebar = Container(
         'bottom-0',
         'w-full',
         'flex-col',
-        'md:h-full',
         'p-4',
         'bg-cyan-900',
         'text-white',
         'fixed',
+        'md:h-full',
         'md:flex',
         'md:relative',
         'md:w-auto'
@@ -27,6 +27,7 @@ export const Sidebar = Container(
             'shadow-md',
             'shadow-violet-500'
         ),
-        BlockText('NF')
+        BlockText('NF'),
+        Container()
     )
 );

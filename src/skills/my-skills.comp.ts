@@ -27,7 +27,13 @@ const Skill = (header: string, ...body: ComponentConfigFn[]) => Container(
 );
 
 export const MySkills = Container(
-    CssClasses('bg-slate-800', 'text-gray-200'),
+    CssClasses(
+        'bg-slate-800',
+        'text-gray-200',
+        'pb-5',
+        'px-3',
+        'md:px-0'
+    ),
     Heading3(
         CssClasses('text-3xl', 'p-5'),
         Text('My Skills')
