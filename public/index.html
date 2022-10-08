@@ -5,21 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#164E63" />
-    <link rel="icon" href="/images/nick_logo.ico"/>
+    <meta name="theme-color"
+          content="#164E63" />
+    <link rel="icon"
+          href="/images/nick_logo.ico" />
     <title>Nick Favero</title>
     <style>
-    @font-face {
-        font-family: Fira;
-        src: url(/fonts/FiraCode-VariableFont_wght.ttf);
-    }
+        @font-face {
+            font-family: Fira;
+            src: local('Fira'), url(/fonts/FiraCode-VariableFont_wght.ttf);
+            font-display: swap;
+        }
+
     </style>
+     <link rel="preload" href="/fonts/Fira.ttf" as="font" type="font/woff2">
     <link href="/index.css"
           rel="stylesheet">
 </head>
 
 <body>
-    <div id="root" class="bg-slate-900"></div>
+    <div id="root"
+         class="bg-slate-900"></div>
     <noscript>Please enable JavaScript to continue using this application.</noscript>
     <script type="text/javascript"
             src="app.min.js"></script>
