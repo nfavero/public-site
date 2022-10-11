@@ -73,7 +73,7 @@ export const MySkills = Container(
             'Other',
             UL(
                 CssClasses('ml-5'),
-                ...['SQL', 'DynamoDB', 'Java', 'Azure', 'AWS'].map(SkillItem)
+                ...['SQL', 'DynamoDB', 'Java', 'Azure', 'AWS', 'Web3'].map(SkillItem)
             )
         )
     )

@@ -17,7 +17,6 @@ export const About = Container(
             'shadow-md',
             'shadow-gray-500',
             'w-full',
-            'md:w-1/4',
             'mt-3'
         ),
         Heading4(

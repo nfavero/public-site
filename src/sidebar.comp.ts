@@ -19,6 +19,7 @@ export const Sidebar = Container(
         'md:p-4',
         'md:justify-start',
         'md:animate-none',
+        'md:m-h-full',
         'md:h-full',
         'md:flex',
         'md:relative',
@@ -38,7 +39,6 @@ export const Sidebar = Container(
             'w-12',
             'h-12'
         ),
-        BlockText('NF'),
-        Container()
+        BlockText('NF')
     )
 );
