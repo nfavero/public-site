@@ -5,6 +5,7 @@ import './styles.css';
 import { Sidebar } from './sidebar.comp';
 import { MySkills } from './skills/my-skills.comp';
 import { MyLinks } from './my-links/my-links.comp';
+import { About } from './about/about.comp';
 
 (function () {
     const Body = CssClassesComp('h-full', 'w-full', 'flex')(Container);
@@ -45,6 +46,7 @@ import { MyLinks } from './my-links/my-links.comp';
                     )
                 ),
                 MySkills,
+                About,
                 Container(
                     // Spacer for bottom bar
                     CssClasses('h-20', 'md:h-0')

@@ -4,6 +4,7 @@ import { RawAtom } from '../comps/raw-atom.comp';
 import github from './github.svg';
 import medium from './medium.svg';
 import linkedIn from './linked-in-dark.svg';
+import codepen from './codepen.svg';
 import { Link } from '../comps/link.atom';
 import { ComponentFactory } from '@nfinite-wisdom/render';
 import { SrOnly } from '../comps/sr-only.comp';
@@ -13,6 +14,7 @@ import { SrOnly } from '../comps/sr-only.comp';
 const Github = RawAtom(github);
 const Medium = RawAtom(medium);
 const LinkedIn = RawAtom(linkedIn);
+const Codepen = RawAtom(codepen);
 
 const IconLink = (href: string, icon: ComponentFactory<any>, alt: string, pad?: boolean) => Link(
     pad ? CssClasses('ml-3') : () => {},
@@ -37,5 +39,6 @@ export const MyLinks = Container(
     ),
     IconLink('https://github.com/nfavero', Github, 'Github', false),
     IconLink('https://www.linkedin.com/in/nickfavero', LinkedIn, 'Linked-in', true),
-    IconLink('https://medium.com/@nick-r-favero', Medium, 'Medium', true)
+    IconLink('https://medium.com/@nick-r-favero', Medium, 'Medium', true),
+    IconLink('https://codepen.io/nfavero', Codepen, 'Codepen', true),
 );
