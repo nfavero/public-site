@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -22,16 +24,33 @@ module.exports = {
                     '0%': { height: '0px' },
                     '50%': { height: '0px' },
                     '100%': { height: '80px' }
+                  },
+                  loader: {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' }
                   }
             },
             animation: {
                 shake: 'shake 1500ms ease-in-out 3',
-                slideUp: 'slideUp 200ms forwards ease-in-out'
+                slideUp: 'slideUp 200ms forwards ease-in-out',
+                loader: 'loader 1s linear infinite'
             },
             fontFamily: {
                 sans: ['Fira', 'Arial', 'sans-serif'],
             }
         }
     },
-    plugins: [],
+    plugins: [
+        plugin(({ addComponents }) => {
+            addComponents({
+                '.loading': {
+                    border: '4px solid #f3f3f3',
+                    borderRadius: '50%',
+                    borderTop: '4px solid #3498db',
+                    width: '24px',
+                    height: '24px'
+                }
+            })
+        })
+    ],
 }
