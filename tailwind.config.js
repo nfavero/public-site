@@ -36,7 +36,7 @@ module.exports = {
                 loader: 'loader 1s linear infinite'
             },
             fontFamily: {
-                sans: ['Fira', 'Arial', 'sans-serif'],
+                sans: ['Poppins', 'Arial', 'sans-serif'],
             }
         }
     },

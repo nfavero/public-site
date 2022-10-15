@@ -79,7 +79,14 @@ import './styles.css';
                             'h-6'
                         )
                     ),
-                    About,
+                    About,   Container(
+                        CssClasses(
+                            'bg-gradient-to-b',
+                            'to-slate-800',
+                            'from-sky-800',
+                            'h-6'
+                        )
+                    ),
                     ContactForm
                     // Container(
                     //     // Spacer for bottom bar
